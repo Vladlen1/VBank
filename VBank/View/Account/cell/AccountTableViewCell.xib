@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellAcount" id="KGk-i7-Jjw" customClass="AccountTableViewCell" customModule="VBank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bI2-vE-vYz">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="odu-p8-pkk"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3Cs-x4-Fb4">
+                        <rect key="frame" x="16" y="11" width="192" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PA5-sE-ASI">
+                        <rect key="frame" x="218" y="12.5" width="86" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3Cs-x4-Fb4" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.6" id="C0r-KE-845"/>
+                    <constraint firstItem="bI2-vE-vYz" firstAttribute="top" secondItem="3Cs-x4-Fb4" secondAttribute="bottom" constant="10.5" id="MoT-G8-Xra"/>
+                    <constraint firstAttribute="trailing" secondItem="bI2-vE-vYz" secondAttribute="trailing" id="SBU-Y2-jJH"/>
+                    <constraint firstItem="bI2-vE-vYz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Sxx-zp-YS0"/>
+                    <constraint firstItem="PA5-sE-ASI" firstAttribute="leading" secondItem="3Cs-x4-Fb4" secondAttribute="trailing" constant="10" id="U9r-j0-aZw"/>
+                    <constraint firstItem="PA5-sE-ASI" firstAttribute="centerY" secondItem="3Cs-x4-Fb4" secondAttribute="centerY" id="cnT-Tt-a8h"/>
+                    <constraint firstItem="3Cs-x4-Fb4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="i9R-dH-fTM"/>
+                    <constraint firstAttribute="bottom" secondItem="bI2-vE-vYz" secondAttribute="bottom" id="iDh-fZ-BgD"/>
+                    <constraint firstAttribute="trailing" secondItem="PA5-sE-ASI" secondAttribute="trailing" constant="16" id="iif-2h-0sk"/>
+                    <constraint firstItem="3Cs-x4-Fb4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="tkv-fF-a5v"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="card" destination="3Cs-x4-Fb4" id="Y5s-29-cii"/>
+                <outlet property="cash" destination="PA5-sE-ASI" id="cxc-oq-aP7"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_VBank {
+  umbrella header "Pods-VBank-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellMenu" rowHeight="60" id="KGk-i7-Jjw" customClass="MenuTableViewCell" customModule="VBank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbJ-j0-UmJ">
+                        <rect key="frame" x="16" y="11" width="288" height="37"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ap3-Pi-wYf">
+                        <rect key="frame" x="0.0" y="58.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Mez-T2-0Yi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ap3-Pi-wYf" secondAttribute="bottom" id="5oO-0w-3Ow"/>
+                    <constraint firstAttribute="trailing" secondItem="DbJ-j0-UmJ" secondAttribute="trailing" constant="16" id="7JP-je-1NZ"/>
+                    <constraint firstAttribute="trailing" secondItem="Ap3-Pi-wYf" secondAttribute="trailing" id="Hu9-tW-fvz"/>
+                    <constraint firstItem="Ap3-Pi-wYf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YKX-oe-vU6"/>
+                    <constraint firstAttribute="bottom" secondItem="DbJ-j0-UmJ" secondAttribute="bottom" constant="11.5" id="YWV-C5-CLO"/>
+                    <constraint firstItem="DbJ-j0-UmJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="gxB-P0-eSp"/>
+                    <constraint firstItem="DbJ-j0-UmJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="rVD-IZ-VfK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="DbJ-j0-UmJ" id="7Qy-R9-eWM"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
